@@ -1,0 +1,40 @@
+body {
+    padding: 20px;
+    background-color: rgb(227, 240, 244);
+}
+.job-application-form {
+    background-color: white;
+    max-width: 600px;
+    border-radius: 8px;
+    margin: auto;
+    padding: 25px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+fieldset{
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+legend{
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.required {
+  color: red;
+}
+.field-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.field-row_element{
+   flex: 1;
+   min-width: 150px;
+}
+.small-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: small;
+}

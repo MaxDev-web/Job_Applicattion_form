@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job application</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="job_application.css">
+</head>
+<body>
+    <form class="job-application-form">
+        <h1>Job Application</h1>
+        <p>Please complete the form below to apply for a position with us</p>
+        <hr>
+
+        <!-- Full Name -->
+        <fieldset>
+            <legend>Full Name <span class="required">*</span></legend>
+            <div class="field-row">
+                <div class="field-row_element">
+                    <input type="text" id="f_name" name="f_name" required>
+                    <label for="f_name" class="small-label">First Name</label>
+                </div>
+                <div class="field-row_element">
+                    <input type="text" id="m_name" name="m_name" required>
+                    <label for="m_name" class="small-label">Middle Name</label>
+                </div>
+                <div class="field-row_element">
+                    <input type="text" id="l_name" name="l_name" required>
+                    <label for="l_name" class="small-label">Last Name</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Body Size -->
+        <fieldset>
+            <legend>Body Size <span class="required">*</span></legend>
+            <div class="field-row">
+                <div class="field-row_element">
+                    <input type="text" id="height" name="height" placeholder="sm" required>
+                    <label for="height" class="small-label">Height</label>
+                </div>
+                <div class="field-row_element">
+                    <input type="text" id="weight" name="weight" placeholder="kg" required>
+                    <label for="weight" class="small-label">Weight</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Birth Date -->
+        <fieldset>
+            <legend>Birth Date</legend>
+            <div class="field-row">
+                <div class="field-row_element">
+                    <select name="birth_month" id="birth_month" required>
+                        <option value="0">Please select a month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <label for="birth_month" class="small-label">Month</label>
+                </div>
+                <div class="field-row_element">
+                    <select name="birth-day" id="birth-day" required>
+                        <option value="0">Please select a day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <label for="birth-day" class="small-label">Day</label>
+                </div>
+                <div class="field-row_element">
+                    <select name="birth-year" id="birth-year" required>
+                        <option value="0">Please select a year</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                        <option value="1989">1989</option>
+                        <option value="1988">1988</option>
+                        <option value="1987">1987</option>
+                        <option value="1986">1986</option>
+                        <option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                        <option value="1982">1982</option>
+                        <option value="1981">1981</option>
+                        <option value="1980">1980</option>
+                        <option value="1979">1979</option>
+                        <option value="1978">1978</option>
+                        <option value="1977">1977</option>
+                        <option value="1976">1976</option>
+                        <option value="1975">1975</option>
+                        <option value="1974">1974</option>
+                        <option value="1973">1973</option>
+                        <option value="1972">1972</option>
+                        <option value="1971">1971</option>
+                        <option value="1970">1970</option>
+                        <option value="1969">1969</option>
+                        <option value="1968">1968</option>
+                        <option value="1967">1967</option>
+                        <option value="1966">1966</option>
+                        <option value="1965">1965</option>
+                        <option value="1964">1964</option>
+                        <option value="1963">1963</option>
+                        <option value="1962">1962</option>
+                        <option value="1961">1961</option>
+                        <option value="1960">1960</option>
+                        <option value="1959">1959</option>
+                        <option value="1958">1958</option>
+                        <option value="1957">1957</option>
+                        <option value="1956">1956</option>
+                        <option value="1955">1955</option>
+                        <option value="1954">1954</option>
+                        <option value="1953">1953</option>
+                        <option value="1952">1952</option>
+                        <option value="1951">1951</option>
+                        <option value="1950">1950</option>
+                        <option value="1949">1949</option>
+                        <option value="1948">1948</option>
+                        <option value="1947">1947</option>
+                        <option value="1946">1946</option>
+                        <option value="1945">1945</option>
+                        <option value="1944">1944</option>
+                        <option value="1943">1943</option>
+                        <option value="1942">1942</option>
+                        <option value="1941">1941</option>
+                        <option value="1940">1940</option>
+                    </select>
+                    <label for="birth-year" class="small-label">Year</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Family Status -->
+        <fieldset>
+            <legend>Family Status</legend>
+            <div>
+                <input type="radio" id="divorced" name="f_status" value="divorced">
+                <label for="divorced">Divorced</label><br>
+
+                <input type="radio" id="married" name="f_status" value="married">
+                <label for="married">Married</label><br>
+
+                <input type="radio" id="single" name="f_status" value="single">
+                <label for="single">Single</label><br>
+
+                <input type="radio" id="other" name="f_status" value="other">
+                <label for="other">Other</label>
+            </div>
+        </fieldset>
+
+        <!-- Current Address -->
+        <fieldset>
+            <legend>Current Address</legend>
+            <div class="field-row">
+                <div class="field-row_element">
+                    <input type="text" id="st_address" name="st_address" required>
+                    <label for="st_address" class="small-label">Street Address</label>
+                </div>
+                <div class="field-row_element">
+                    <input type="text" id="st_address2" name="st_address2">
+                    <label for="st_address2" class="small-label">Street Address Line 2</label>
+                </div>
+                <div class="field-row_element">
+                    <input type="text" id="city_address" name="city_address" required>
+                    <label for="city_address" class="small-label">City</label>
+                </div>
+                <div class="field-row_element">
+                    <input type="text" id="state_address" name="state_address" required>
+                    <label for="state_address" class="small-label">State / Province</label>
+                </div>
+                <div class="field-row_element">
+                    <input type="text" id="postal" name="postal" required>
+                    <label for="postal" class="small-label">Postal / Zip Code</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Email Address -->
+        <fieldset>
+            <legend>Email Address</legend>
+            <div>
+                <input type="email" id="email" name="email" placeholder="ex: myname@example.com" required>
+                <label for="email" class="small-label">example@example.com</label>
+            </div>
+        </fieldset>
+
+        <!-- Phone Number -->
+        <fieldset>
+            <legend>Phone Number</legend>
+            <div>
+                <input type="tel" id="tel" name="tel" placeholder="+998909009090" required>
+            </div>
+        </fieldset>
+
+        <!-- LinkedIn -->
+        <fieldset>
+            <legend>LinkedIn</legend>
+            <div>
+                <input type="url" id="linkedln_url" name="linkedln_url" required>
+            </div>
+        </fieldset>
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>Experience</legend>
+            <div>
+                <input type="number" id="experience" name="experience" required>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <!-- Position Applied -->
+        <fieldset>
+            <legend>Position Applied</legend>
+            <div>
+                <select name="position" id="position" required>
+                    <option value="0">Please Select</option>
+                    <option value="1">Marketing Specialist</option>
+                    <option value="2">Sales Manager</option>
+                    <option value="3">Product Lead</option>
+                    <option value="4">Developer</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- How Did You Hear About Us -->
+        <fieldset>
+            <legend>How Did You Hear About Us</legend>
+            <div>
+                <select name="info" id="info" required>
+                    <option value="0">Please Select</option>
+                    <option value="1">LinkedIn</option>
+                    <option value="2">Event</option>
+                    <option value="3">Social Media</option>
+                    <option value="4">Company Website</option>
+                    <option value="5">Family / Friend</option>
+                    <option value="6">Other</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Available Start Date -->
+        <fieldset>
+            <legend>Available Start Date</legend>
+            <div>
+                <input type="date" name="start_date" id="start_date" required>
+            </div>
+        </fieldset>
+
+        <!--Computer Skills-->
+        <fieldset>
+            <Legend>Computer Skills</Legend>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>########</th>
+                            <th>Beginner</th>
+                            <th>Elementary</th>
+                            <th>Advanced</th>
+                            <th>Expert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Excel</td>
+                            <td><input type="radio" name="excel_level" id="excel_level" value="excel_level"></td>
+                            <td><input type="radio" name="excel_level" id="excel_level" value="excel_level"></td>
+                            <td><input type="radio" name="excel_level" id="excel_level" value="excel_level"></td>
+                            <td><input type="radio" name="excel_level" id="excel_level" value="excel_level"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Word
+                            </td>
+                            <td><input type="radio" name="word_level" id="word_level" value="word_level"></td>
+                            <td><input type="radio" name="word_level" id="word_level" value="word_level"></td>
+                            <td><input type="radio" name="word_level" id="word_level" value="word_level"></td>
+                            <td><input type="radio" name="word_level" id="word_level" value="word_level"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1C
+                            </td>
+                            <td><input type="radio" name="1C_level" id="1C_level" value="1C_level"></td>
+                            <td><input type="radio" name="1C_level" id="1C_level" value="1C_level"></td>
+                            <td><input type="radio" name="1C_level" id="1C_level" value="1C_level"></td>
+                            <td><input type="radio" name="1C_level" id="1C_level" value="1C_level"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            Programming Language                                
+                            </td>
+                            <td><input type="radio" name="pl_level" id="pl_level" value="pl_level"></td>
+                            <td><input type="radio" name="pl_level" id="pl_level" value="pl_level"></td>
+                            <td><input type="radio" name="pl_level" id="pl_level" value="pl_level"></td>
+                            <td><input type="radio" name="pl_level" id="pl_level" value="pl_level"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+
+        <!--Abilty Knowing English Language-->
+        <fieldset class="rating-scale">
+            <legend>Ability knowing English Language</legend>
+            <div class="rating-options">
+                <input type="radio" id="rating-1" name="english_ability" value="1">
+                <label for="rating-1">1</label>
+
+                <input type="radio" id="rating-2" name="english_ability" value="2">
+                <label for="rating-2">2</label>
+
+                <input type="radio" id="rating-3" name="english_ability" value="3">
+                <label for="rating-3">3</label>
+
+                <input type="radio" id="rating-4" name="english_ability" value="4">
+                <label for="rating-4">4</label>
+
+                <input type="radio" id="rating-5" name="english_ability" value="5">
+                <label for="rating-5">5</label>
+            </div>
+            <div class="labels"></div>
+                <span>Worst</span>
+                <span>Best</span>
+            </div>
+        </fieldset>
+        <!--Applicant Document(Diploma, Certificate)-->
+        <fieldset>
+            <legend>
+                Applicant Document(Diploma, Certificate)
+            </legend>
+            <div>
+                <input type="file" id="doc" name="doc">
+            </div>
+        </fieldset>
+         <!--Upload Your Resume-->
+        <fieldset>
+            <legend>
+                Upload Your Resume
+            </legend>
+            <div>
+                <input type="file" id="resume" name="resume">
+            </div>
+        </fieldset>
+         <!--Cover Letter-->
+        <fieldset>
+            <legend>
+                Cover Letter
+            </legend>
+            <div>
+                <textarea name="cover_letter" id="cover_letter"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit">Apply</button>
+    </form>
+</body>
+</html>
